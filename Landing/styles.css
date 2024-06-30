@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+header{
+    height: 80px;
+    background: rgb(101, 186, 197);
+    width: 100%;
+    position: fixed;
+}
+ul li{
+    display : inline;
+    margin: 10px;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+a:hover{
+    color: white;
+}
+.logo h1 {
+    left: 90px;
+    top: 35px;
+    position: fixed;
+}
+.logo img{
+    mix-blend-mode: multiply;
+    position: fixed;
+    height: auto;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.small-box{
+    height: 20px;
+    background: rgb(13, 19, 78);
+    color: white;
+    text-align: center;
+}
+/* home section styling */
+.home {
+    background-image: url('images/classroom.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.class {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    max-width: 80%;
+    font-size: 24px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.text {
+    flex: 1;
+    text-align: left;
+}
+
+.text h2 {
+    margin: 10px 30px;
+    padding: 15px;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow:  rgba(0, 0, 0, 0.8);
+}
+
+.enroll {
+    text-align: right;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff3366; /* Adjust button background color */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e6004c;
+}
+ 
+
+/*courses*/
+.course {
+    max-width: 100%;
+    background-color: rgb(230, 230, 230);
+    padding: 50px 0; 
+    text-align: center;
+}
+
+.course .max-width {
+    max-width: 100%;
+    margin: 0 auto; 
+    padding: 0 15px; /* Add padding to handle small screen margins */
+}
+
+.course .title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.course .title::after {
+    content: "Some of our popular courses";
+    display: block;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: black;
+}
+
+.course .carousel {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap; /* To handle responsiveness */
+}
+
+.course .carousel .card {
+    background: #fff;
+    border-radius: 6px;
+    padding: 25px 20px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin: 15px;
+    width: 100%; /* Make cards full width by default */
+    max-width: 250px; /* Ensure cards don't exceed a maximum width */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Added box shadow for better visuals */
+}
+
+.course .carousel .card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1); /* Adjusted shadow on hover */
+}
+
+.course .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: #333;
+}
+
+.course .carousel .card .text {
+    font-size: 18px;
+    font-weight: bold; /* Make the course name bold */
+    margin: 10px 0 7px 0;
+    color: #333;
+}
+
+.course .carousel .card img {
+    height: 150px; /* Adjusted height */
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    margin-bottom: 10px; /* Added margin for spacing */
+}
+
+.course .carousel .card:hover img {
+    opacity: 0.9; /* Added slight opacity change on hover */
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+
+
+/* FAQ section */
+.faq {
+    background-color: white; 
+    padding: 50px 0; 
+    text-align: center;
+}
+
+.faq .max-width {
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.faq .title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.faq .faq-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq .faq-item {
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    text-align: left;
+    width: 80%;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Added box shadow for better visuals */
+    transition: all 0.3s ease;
+}
+
+.faq .faq-item:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1); /* Adjusted shadow on hover */
+}
+
+.faq .question {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.faq .answer {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Contact section */
+.contact {
+    background-color: #f0f0f0; 
+    padding: 50px 0; 
+    text-align: center;
+}
+
+.contact .max-width {
+    max-width: 800px;
+    margin: 0 auto; 
+}
+
+.contact .title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.contact .contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact .contact-info {
+    flex: 1;
+    min-width: 300px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact .contact-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact .contact-info p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.contact form {
+    flex: 2;
+    min-width: 300px;
+}
+
+.contact .input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.contact .input-box input,
+.contact .input-box textarea {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background: #fff;
+}
+
+.contact .input-box textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact .input-box label {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 16px;
+    color: #666;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.contact .input-box input:focus + label,
+.contact .input-box textarea:focus + label,
+.contact .input-box input:valid + label,
+.contact .input-box textarea:valid + label {
+    top: -10px;
+    left: 15px;
+    color: crimson;
+    font-size: 12px;
+}
+
+.contact .input-box input[type="submit"] {
+    background: crimson;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 15px 0;
+    transition: 0.3s;
+}
+
+.contact .input-box input[type="submit"]:hover {
+    background: rgb(131, 57, 69);
+}
+
+/* Footer */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer .max-width {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 0 15px; /* Add padding to handle small screen margins */
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer .footer-section {
+    flex: 1;
+    margin: 15px;
+}
+
+.footer .about {
+    max-width: 400px;
+}
+
+.footer .links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .links ul li {
+    margin-bottom: 10px;
+}
+
+.footer .links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer .links ul li a:hover {
+    color: crimson;
+}
+
+.footer .social {
+    max-width: 200px;
+}
+
+.footer .social-links a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+    color: rgb(131, 57, 69);
+}
